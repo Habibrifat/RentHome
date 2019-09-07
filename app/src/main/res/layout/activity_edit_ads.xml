@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".Information_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnermonthID1"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:entries="@array/Month"/>
+        <EditText
+            android:id="@+id/amountID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Enter the Amount"
+            android:inputType="number"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <EditText
+            android:id="@+id/phonenoID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Enter the Phoneno"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+        <Spinner
+            android:id="@+id/spinnerlocationID1"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:entries="@array/Location"/>
+
+        <EditText
+            android:id="@+id/addressID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Enter the Address"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+
+        <EditText
+            android:id="@+id/dscriptionID1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="Enter the Description"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ads(Enable)"
+            android:textSize="25dp"/>
+
+        <Button
+            android:id="@+id/savebutttonId1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="save"
+            android:textSize="22dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

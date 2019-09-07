@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "549526202797",
+    "firebase_url": "https://renthoom-3e4a1.firebaseio.com",
+    "project_id": "renthoom-3e4a1",
+    "storage_bucket": "renthoom-3e4a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549526202797:android:72eab7af7495009d",
+        "android_client_info": {
+          "package_name": "com.example.renthoom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549526202797-fkjuqr9voeu95oiq44bfbbfp6vn1b05h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.renthoom",
+            "certificate_hash": "875706891c96fe5a1ee464b5415fd58a865dbe8b"
+          }
+        },
+        {
+          "client_id": "549526202797-i47hordq5ujntdkvt8ii36r28idoupa3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.renthoom",
+            "certificate_hash": "ae7f3b75484884ff139cc8067bd6a9d95fbfbb31"
+          }
+        },
+        {
+          "client_id": "549526202797-jtu2alulv2ibd6jd8fbto2ri949on0uj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVybi_51b6LYMzOfp3OxbJRxdHCqGuJnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549526202797-jtu2alulv2ibd6jd8fbto2ri949on0uj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

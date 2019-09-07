@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Month">
+        <item>-Select the Month-</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="Location">
+        <item>-Select Location-</item>
+        <item>Colony</item>
+        <item>Dottobari</item>
+        <item>Jaleswaritola</item>
+        <item>Khandar</item>
+        <item>Malotinagar</item>
+        <item>Matidali</item>
+        <item>NataiPara</item>
+        <item>Naruli</item>
+        <item>Uposhohor</item>
+        <item>RahmanNagor</item>
+        <item>Thanthania</item>
+        <item>Thengamara</item>
+
+
+
+    </string-array>
+</resources>

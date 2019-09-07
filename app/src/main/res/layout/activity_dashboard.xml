@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Dashboard">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/DashboardID"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/images">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/DashboardID"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="@color/Black"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="215dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="50dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/createdId"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/created_info"
+                                android:layout_centerInParent="true"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Created Add your Home"
+                                android:textSize="16dp"
+                                android:layout_below="@id/createdId"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/buttoncreatedAdds"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_marginTop="50dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginRight="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/showallId"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:src="@drawable/details_icon"
+                                android:layout_centerInParent="true"
+                                android:layout_margin="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Show all adds"
+                                android:textSize="16dp"
+                                android:layout_below="@id/showallId"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"/>
+
+                            <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/buttonshowallId"
+                            android:background="@android:color/transparent"/>
+
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/editAds"
+            android:layout_gravity="center"
+            android:text="Edit Ads"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/search"
+            android:layout_gravity="center"
+            android:text="Search"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
