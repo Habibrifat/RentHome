@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:hint="Enter the Phoneno"
+        android:hint="Enter the Phone Number"
         android:inputType="phone"
         android:maxLength="11"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
@@ -66,8 +66,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="save data"
-        android:textSize="22dp"/>
+        android:text="save"
+        android:textSize="20dp"/>
 
 
 

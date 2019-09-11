@@ -25,7 +25,7 @@ public class Details extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
-        this.setTitle("Show All Adds");
+        this.setTitle("Show All Ads");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Ads");
 

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#FFFFc107"
-        android:dividerHeight="2dp"
+        android:dividerHeight="5dp"
         android:listSelector="#E91E63"
         android:id="@+id/listViewID">
 

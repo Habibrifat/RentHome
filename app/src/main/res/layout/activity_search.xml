@@ -16,10 +16,10 @@
 
         <Spinner
             android:id="@+id/locationSearchID"
-            android:layout_width="150dp"
+            android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:layout_marginTop="25dp"
-            android:entries="@array/Location"/>
+            android:entries="@array/Location" />
         <Button
             android:id="@+id/searchbuttonID"
             style="@style/Base.Widget.AppCompat.Button.Colored"

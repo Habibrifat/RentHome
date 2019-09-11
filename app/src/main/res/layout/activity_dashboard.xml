@@ -1,163 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    android:orientation="vertical"
-    android:padding="10dp"
+
     tools:context=".Dashboard">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
-
-
-
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid"
+        android:orientation="vertical"
+        android:weightSum="10">
+
         <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
 
-            <LinearLayout
-                android:id="@+id/DashboardID"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:background="@drawable/images">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/DashboardID"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-
-                    android:textColor="@color/Black"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/textGrid"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="215dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
-
-                    <android.support.v7.widget.CardView
-                        android:layout_marginTop="50dp"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:orientation="vertical">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/createdId"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/created_info"
-                                android:layout_centerInParent="true"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Created Add your Home"
-                                android:textSize="16dp"
-                                android:layout_below="@id/createdId"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"/>
-
-                            <Button
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:id="@+id/buttoncreatedAdds"
-                                android:background="@android:color/transparent"/>
-
-                        </RelativeLayout>
-                    </android.support.v7.widget.CardView>
-
-                    <android.support.v7.widget.CardView
-                        android:layout_marginTop="50dp"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_gravity="center"
-                        android:orientation="vertical"
-                        android:layout_marginRight="5dp">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:id="@+id/showallId"
-                                android:layout_width="50dp"
-                                android:layout_height="50dp"
-                                android:src="@drawable/details_icon"
-                                android:layout_centerInParent="true"
-                                android:layout_margin="5dp"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Show all adds"
-                                android:textSize="16dp"
-                                android:layout_below="@id/showallId"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"/>
-
-                            <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/buttonshowallId"
-                            android:background="@android:color/transparent"/>
-
-
-                        </RelativeLayout>
-                    </android.support.v7.widget.CardView>
-
-
-                </LinearLayout>
-            </LinearLayout>
+                android:layout_centerInParent="true"
+                android:text="DashBoard"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
 
         </RelativeLayout>
 
-        <Button
-            android:id="@+id/editAds"
-            android:layout_gravity="center"
-            android:text="Edit Ads"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/search"
-            android:layout_gravity="center"
-            android:text="Search"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <GridLayout
+            android:id="@+id/DashboardID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="3">
+
+            <!-- Row 1 -->
+            <!--column 1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/buttoncreatedAdds"
+                        android:drawableTop="@drawable/writing"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/transparent"
+                        android:text="Created Ads"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+
+                    <Button
+                        android:id="@+id/buttonshowallId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/showall"
+                        android:text="All Ads"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Row 2 -->
+            <!--column 1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/search"
+                        android:drawableTop="@drawable/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:text="Search"
+                        android:textStyle="bold"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/editAds"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/edit"
+                        android:text="Edit Information"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:background="@android:color/transparent" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <!-- Row 2 -->
+            <!--column 1-->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/created_info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Created your Adds"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+        </GridLayout>
 
     </LinearLayout>
-    </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

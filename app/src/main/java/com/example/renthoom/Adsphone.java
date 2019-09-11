@@ -16,7 +16,7 @@ public class Adsphone extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adsphone);
-        this.setTitle("Edit Adds");
+        this.setTitle("Edit Ads");
 
         phn = findViewById(R.id.adsPhn);
 

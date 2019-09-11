@@ -31,7 +31,7 @@ public class EditAds extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_ads);
-        this.setTitle("Edit Adds");
+        this.setTitle("Edit Ads");
 
         amounttext = findViewById(R.id.amountID1);
         addresstext = findViewById(R.id.addressID1);

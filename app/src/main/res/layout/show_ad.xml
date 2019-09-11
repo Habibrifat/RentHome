@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp">
 
@@ -17,14 +18,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="15dp"
-                android:text="Address : "/>
+                android:textSize="30dp"
+                android:text="Address : " />
             <TextView
                 android:id="@+id/address"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
 
 
@@ -34,14 +36,14 @@
             android:orientation="vertical">
             <TextView
                 android:textStyle="bold"
-                android:textSize="15dp"
+                android:textSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Description : "/>
             <TextView
                 android:id="@+id/description"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -52,14 +54,14 @@
             android:orientation="vertical">
             <TextView
                 android:textStyle="bold"
-                android:textSize="15dp"
+                android:textSize="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone No : "/>
+                android:text="Phone Number : "/>
             <TextView
                 android:id="@+id/phoneNo"
                 android:layout_marginTop="10dp"
-                android:textSize="15dp"
+                android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

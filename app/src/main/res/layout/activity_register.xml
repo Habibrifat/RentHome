@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     android:gravity="center"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/grid"
     tools:context=".Register">
 
 
@@ -16,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:focusable="true"
-        android:focusableInTouchMode="true">
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="60dp">
 
     <EditText
         android:id="@+id/registeremaild"

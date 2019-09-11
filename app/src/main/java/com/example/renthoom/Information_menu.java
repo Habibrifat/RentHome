@@ -23,6 +23,7 @@ public class Information_menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_menu);
+        this.setTitle("Created Ads");
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Ads");
 
